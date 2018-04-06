@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/LightGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ebc003.gymapp.ActivityEnquiryFormTwo">
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_enquiry"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/txtRest"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:elevation="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+        <com.example.ebc003.gymapp.CustomComponents.MyCustomCheckbox
+            android:id="@+id/checkboxHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:checked="true"
+            android:text="@string/txtHome"
+            android:textSize="20sp"
+            android:layout_below="@+id/txtRest"
+            android:layout_toRightOf="@+id/txtRest"
+            android:layout_toEndOf="@+id/txtRest"/>
+
+        <com.example.ebc003.gymapp.CustomComponents.MyCustomCheckbox
+            android:id="@+id/checkboxAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/txtAway"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/checkboxHome"
+            android:layout_toRightOf="@+id/checkboxHome"
+            android:layout_toEndOf="@+id/checkboxHome"/>
+
+        <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+            android:id="@+id/txtRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/txtRP"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/checkboxHome"
+            android:layout_alignLeft="@+id/checkboxHome"
+            android:layout_alignStart="@+id/checkboxHome"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editRP"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/txtRP"
+            android:layout_alignLeft="@+id/editSleep"
+            android:layout_alignStart="@+id/editSleep" />
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+            android:id="@+id/txtSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/txtSleep"
+            android:layout_below="@+id/txtRP"
+            android:layout_alignLeft="@+id/checkboxHome"
+            android:layout_alignStart="@+id/checkboxHome"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editSleep"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:layout_marginRight="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/txtSleep"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+            android:id="@+id/txtSnoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:text="@string/txtSnoring"
+            android:layout_below="@+id/txtSleep"
+            android:layout_alignLeft="@+id/checkboxHome"
+            android:layout_alignStart="@+id/checkboxHome"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editSnoring"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtSnoring"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/edit_background"/>
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtOverload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_enquiry"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/txtOverload"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtSnoring"
+        android:layout_alignLeft="@+id/txtRest"
+        android:layout_alignStart="@+id/txtRest" />
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtOccupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:text="@string/txtOccupationEnquiry"
+        android:layout_below="@+id/txtOverload"
+        android:layout_alignLeft="@+id/txtSnoring"
+        android:layout_alignStart="@+id/txtSnoring" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editOccuTime1"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_background"
+        android:layout_alignBottom="@+id/txtOccupation"
+        android:layout_alignLeft="@+id/editSnoring"
+        android:layout_alignStart="@+id/editSnoring" />
+
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtToTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/txtToTime"
+        android:layout_below="@+id/editOccuTime1"
+        android:layout_alignLeft="@+id/editOccuTime1"
+        android:layout_alignStart="@+id/editOccuTime1" />
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtToTimeExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/txtToTimeExample1"
+        android:layout_below="@+id/editOccuTime1"
+        android:layout_alignRight="@+id/editOccuTime1"
+        android:layout_alignEnd="@+id/editOccuTime1" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editOccuTime2"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_background"
+        android:layout_below="@+id/txtToTime"
+        android:layout_alignLeft="@+id/txtToTime"
+        android:layout_alignStart="@+id/txtToTime" />
+
+    <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleTwo
+        android:id="@+id/txtToTimeExample2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/txtToTimeExample2"
+        android:layout_below="@+id/editOccuTime2"
+        android:layout_alignRight="@+id/editOccuTime1"
+        android:layout_alignEnd="@+id/editOccuTime1" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="@string/btnEnquiry"
+        android:layout_marginTop="10dp"
+        android:backgroundTintMode="add"
+        android:elevation="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/txtToTimeExample2"
+        android:onClick="onClickEnqFormThree"/>
+
+</RelativeLayout>

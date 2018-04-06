@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/textview">
+            <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleOne
+                android:id="@+id/text_currentMonth"
+                android:text="Today's Month"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorWhite"/>
+            <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleOne
+                android:id="@+id/text_currentDate"
+                android:text="Today's Date"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"/>
+            <com.example.ebc003.gymapp.CustomComponents.MyCustomTextViewStyleOne
+                android:id="@+id/text_currentDay"
+                android:text="Today's Day"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp">
+            <!--<com.example.ebc003.gymapp.MyCustomTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textSize="@dimen/text_size"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:text="M-Modality"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/text_size"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:text="XI-Expected Intensity"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/text_size"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:text="AI-Actual Intensity"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/text_size"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:text="R-Repetititons"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
